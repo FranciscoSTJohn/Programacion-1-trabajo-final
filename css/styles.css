@@ -8,7 +8,7 @@ header{
     text-align: center;
 }
 .filip {
-    background-image: url(../Avatar-619571521-large.jpg);
+    background-image: url(../img/Avatar-619571521-large.jpg);
     background-repeat: no-repeat;
     text-align: right;
     background-size: 650px 1000px;
@@ -36,7 +36,7 @@ header{
         color: grey;
     }
     .felipe{
-        background-image: url(../peaky-blinders-13.jpg);
+        background-image: url(../img/peaky-blinders-13.jpg);
         background-repeat: no-repeat;
         background-size: 650px 1000px;
         font-weight: 800;
