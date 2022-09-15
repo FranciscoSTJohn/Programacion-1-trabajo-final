@@ -19,51 +19,51 @@ header{
     
     
     
-    }
-    .agus {
-        text-align: center;
-        color: rgb(255, 225, 0);
-        font-size: 20px;
+}
+.agus {
+    text-align: center;
+    color: rgb(255, 225, 0);
+    font-size: 20px;
         
-    }
-    .pep {
+}
+.pep {
     height: 60px;
     margin: 15px;
     border-style: hidden;
-    }
-    .rey{
-        text-align: center;
-        color: grey;
-    }
-    .felipe{
-        background-image: url(../img/peaky-blinders-13.jpg);
-        background-repeat: no-repeat;
-        background-size: 650px 1000px;
-        font-weight: 800;
-        color: gray;
-        background-color: black;
-        text-align: right;
-    }
-    .felix{
-        text-align: center;
-    }
-    .pip{
-        height: 60px;
-        margin: 15px;
-        border-style: hidden;  
-    }
-    .jhon{
-        text-align: center;
-        color: rgb(255, 225, 0);
-        font-size: 20px;
-    }
-    .zony{
-        text-align: center;
-    }
-    .termo{
-        background-color: black;
-        color: gray;
-    }
-    .si{
-        text-align: center;
-    }
+}
+.rey{
+    text-align: center;
+    color: grey;
+}
+.felipe{
+    background-image: url(../img/peaky-blinders-13.jpg);
+    background-repeat: no-repeat;
+    background-size: 650px 1000px;
+    font-weight: 800;
+    color: gray;
+    background-color: black;
+    text-align: right;
+}
+.felix{
+    text-align: center;
+}
+.pip{
+    height: 60px;
+    margin: 15px;
+    border-style: hidden;  
+}
+.jhon{
+    text-align: center;
+    color: rgb(255, 225, 0);
+    font-size: 20px;
+}
+.zony{
+    text-align: center;
+}
+.termo{
+    background-color: black;
+    color: gray;
+}
+.si{
+    text-align: center;
+}
