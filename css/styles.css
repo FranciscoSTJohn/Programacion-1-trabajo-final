@@ -7,6 +7,17 @@
 header{
     text-align: center;
 }
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 95%;
+    height: 100%;
+}
+img{
+    height: 200px;
+}
 .filip {
     background-image: url(../img/Avatar-619571521-large.jpg);
     background-repeat: no-repeat;
@@ -15,10 +26,6 @@ header{
     font-weight: 800;
     color:gray;
     background-color: black;
-    
-    
-    
-    
 }
 .agus {
     text-align: center;
@@ -66,4 +73,9 @@ header{
 }
 .si{
     text-align: center;
+}
+.peliculaspopulaares{
+    height: 300px;
+    width: 100px;
+    text-align: center;   
 }
