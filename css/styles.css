@@ -92,3 +92,33 @@ img{
 .serie{
     text-align: center;
 }
+.titulo
+{
+    text-align: center;
+}
+
+.container_peliculas 
+{
+  
+    display: flex;
+    flex-direction: row; 
+    margin: 100px;
+    justify-content: space-around;
+    
+}
+.container_series {
+    display: flex;
+    flex-direction: row;
+    margin: 100px;
+    justify-content: space-around;
+}
+.imagenes 
+{
+    display: flex;
+    flex-direction: row;
+    
+    height: 250px;
+    width: 250px;
+    margin: 100px;
+    
+}
