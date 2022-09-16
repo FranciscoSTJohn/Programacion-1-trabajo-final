@@ -127,7 +127,8 @@ width: 800px;
     flex-direction: row; 
     justify-content: space-around;
     padding: 0px;
-    width: 1500px;
+    width: 95%;
+    margin: 10px;
 }
 .container_series 
 {
@@ -135,7 +136,8 @@ width: 800px;
     flex-direction: row;
     justify-content: space-around;
     padding: 0px;
-    width: 1670px;
+    width: 95%;
+    margin: 10px;
     
 }
 .imagenes 
@@ -144,6 +146,6 @@ width: 800px;
     flex-direction: row;
     justify-content: space-around; 
     height: 350px;
-    width: 1500px;
+    width: 95%;
     
 }
