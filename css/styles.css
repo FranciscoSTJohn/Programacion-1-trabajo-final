@@ -1,3 +1,6 @@
+body{
+    background-color: black;
+}
 .links{
     color: grey;
     text-decoration: none;
@@ -14,9 +17,6 @@ header{
     justify-content: space-around;
     width: 95%;
     height: 100%;
-}
-img{
-    height: 200px;
 }
 .filip {
     background-image: url(../img/Avatar-619571521-large.jpg);
@@ -88,6 +88,7 @@ img{
 .imagen{
     border-style: ridge;
     border-color: grey;
+    height: 350px;
 }
 .serie{
     text-align: center;
