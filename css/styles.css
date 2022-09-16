@@ -89,20 +89,18 @@ header{
     border-style: ridge;
     border-color: grey;
     height: 350px;
+    width: 15vw;
 }
 .serie{
     text-align: center;
 }
-.logo
-{
-display: flex;
-height: 150px;
-width: 800px;
-
+.logo{
+    display: flex;
+    height: 150px;
+    width: 800px;
 }
 
-.titulo
-{
+.titulo {
     text-align: center;
     color: aliceblue;
     
