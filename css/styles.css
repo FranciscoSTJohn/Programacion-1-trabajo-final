@@ -5,8 +5,14 @@ body{
 .links{
     color: grey;
     text-decoration: none;
-    font-size: 120%;
+    font-size: 30px;
     background-size: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
 }
 header{
     text-align: center;
@@ -106,14 +112,16 @@ header{
     height: 350px;
     width: 15vw;
 }
+.fav{
+    text-decoration: none;
+}
 .serie{
     text-align: center;
 }
 .logo{
     display: flex;
     height: 150px;
-    width: 800px;
-    margin-left: 50px;
+    width: 100%;
 }
 
 .titulo {
