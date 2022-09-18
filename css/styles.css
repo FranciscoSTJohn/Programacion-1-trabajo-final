@@ -204,3 +204,14 @@ header{
         height: 25vw;
     }
 }
+.raiting{
+    width: 500px;
+    justify-items: center;
+}
+.trailer{
+    height: 250px;
+    width: 500px
+}
+.borrala{
+    flex-direction: row;
+}
