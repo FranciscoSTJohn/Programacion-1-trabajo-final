@@ -17,6 +17,15 @@ body{
 header{
     text-align: center;
 }
+.container_busqueda{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 95%;
+    height: 100%;
+    margin: 0% 2%;
+}
 .container{
     display: flex;
     flex-wrap: wrap;
@@ -98,7 +107,6 @@ header{
 .peliculaspopulaares{
     height: 300px;
     width: 100px;
-    text-align: center;
     border-style: ridge; 
     border-color: red; 
 }
