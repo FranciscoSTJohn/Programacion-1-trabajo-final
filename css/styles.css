@@ -204,13 +204,18 @@ header{
         height: 25vw;
     }
 }
-.raiting{
-    width: 500px;
-    justify-items: center;
+.rating{
+    height: 350px;
+    width: 1500px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    background-color: red;
 }
 .trailer{
     height: 250px;
     width: 500px
+    
 }
 .borrala{
     flex-direction: row;
