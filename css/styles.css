@@ -40,8 +40,6 @@ header{
     height: 100%;
 }
 .filip {
-    background-image: url(../img/Avatar-619571521-large.jpg);
-    background-repeat: no-repeat;
     text-align: right;
     background-size: 650px 1000px;
     font-weight: 800;
@@ -78,8 +76,6 @@ header{
     color: red;
 }
 .felipe{
-    background-image: url(../img/peaky-blinders-13.jpg);
-    background-repeat: no-repeat;
     background-size: 650px 1000px;
     font-weight: 800;
     color: red;
@@ -206,17 +202,25 @@ header{
 }
 .rating{
     height: 350px;
-    width: 1500px;
+    width: 1400px;
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-start;
-    background-color: red;
+    justify-content: space-between;
 }
 .trailer{
     height: 250px;
-    width: 500px
-    
+    width: 500px  
 }
-.borrala{
-    flex-direction: row;
+.test{
+    flex-direction: column;
+}
+.large{
+    width: 600px;
+    height: 900px;
+    background-color: aqua;
+}
+.modify{
+    width: 600px;
+    height: 900px;
 }
