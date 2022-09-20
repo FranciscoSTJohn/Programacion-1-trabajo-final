@@ -4,7 +4,10 @@
 body{
     background-color: black;
     color: red;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
 .links{
     color: grey;
     text-decoration: none;
@@ -24,12 +27,13 @@ header{
 }
 .container_busqueda{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
     justify-content: flex-start;
     width: 95%;
     height: 100%;
     margin: 0% 2%;
+    justify-content: space-between;
 }
 .container{
     display: flex;
