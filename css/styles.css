@@ -6,6 +6,7 @@ body{
     color: red;
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .links{
@@ -202,6 +203,9 @@ header{
     .logo{
         width: 25vw;
         height: 25vw;
+    }
+    .container_busqueda{
+        flex-direction: column;
     }
 }
 .rating{
