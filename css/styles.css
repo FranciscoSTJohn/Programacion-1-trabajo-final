@@ -62,7 +62,7 @@ header{
     text-align: center;
     color: rgb(255, 225, 0);
     font-size: 20px;
-        
+    margin: 0px 0px 60px 0px;
 }
 .pep {
     height: 60px;
@@ -89,6 +89,7 @@ header{
 }
 .zony{
     text-align: center;
+    margin: 0px 0px 100px 0px;
 }
 .termo{
     background-color: black;
@@ -142,14 +143,6 @@ header{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: red;
 }
-.imagenes 
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around; 
-    height: 350px;
-    width: 95%;   
-}
 .info{
     justify-content: flex-start;
 }
@@ -160,25 +153,23 @@ header{
     flex-direction: row-reverse;
     align-items: flex-start;
     justify-content: space-between;
-}
-.borrala{
-    width: 100%;
     margin: 0px 0px 100px 0px;
 }
 .division{
-    l
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0px 0px 100px 0px;
 }
-.trailer{
-    height: 250px;
-    width: 500px  
+.p{
+    width: 55%;
+}
+.gen{
+    text-align: right;
 }
 .test{
     flex-direction: column;
-}
-.large{
-    width: 600px;
-    height: 900px;
-    background-color: aqua;
 }
 .modify{
     width: 600px;
@@ -189,7 +180,7 @@ header{
         flex-direction: column;
     }
     .imagen{
-        width: 100%;
+        width: 70%;
     }
     .container_header{
         flex-direction: column;
@@ -204,5 +195,21 @@ header{
     }
     .container_busqueda{
         flex-direction: column;
+    }
+    .rating{
+        margin: 0px 0px 60px 0px;
+    }
+    iframe{
+        width: 30vw;
+    }
+    .pep{
+        width: 12vw;
+    }
+    .modify{
+        width: 50vw;
+        height: 120vw;
+    }
+    .agus{
+        margin: 0px 0px 40px 0px;
     }
 }
