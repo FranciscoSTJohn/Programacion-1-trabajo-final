@@ -44,13 +44,6 @@ header{
     width: 95%;
     height: 100%;
 }
-.filip {
-    text-align: right;
-    background-size: 650px 1000px;
-    font-weight: 800;
-    color: red;
-    background-color: black;
-}
 .video
 {
     display: flex;
@@ -79,13 +72,7 @@ header{
 .rey{
     text-align: center;
     color: red;
-}
-.felipe{
-    background-size: 650px 1000px;
-    font-weight: 800;
-    color: red;
-    background-color: black;
-    text-align: right;
+    margin: 50px 0px 100px 0px
 }
 .felix{
     text-align: center;
@@ -155,26 +142,6 @@ header{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: red;
 }
-.container_peliculas 
-{
-  
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-around;
-    padding: 0px;
-    width: 95%;
-    margin: 10px;
-}
-.container_series 
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 0px;
-    width: 95%;
-    margin: 10px;
-    
-}
 .imagenes 
 {
     display: flex;
@@ -185,6 +152,37 @@ header{
 }
 .info{
     justify-content: flex-start;
+}
+.rating{
+    height: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.borrala{
+    width: 100%;
+    margin: 0px 0px 100px 0px;
+}
+.division{
+    l
+}
+.trailer{
+    height: 250px;
+    width: 500px  
+}
+.test{
+    flex-direction: column;
+}
+.large{
+    width: 600px;
+    height: 900px;
+    background-color: aqua;
+}
+.modify{
+    width: 600px;
+    height: 900px;
 }
 @media(max-width:768px){
     .container{
@@ -207,28 +205,4 @@ header{
     .container_busqueda{
         flex-direction: column;
     }
-}
-.rating{
-    height: 350px;
-    width: 1400px;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-.trailer{
-    height: 250px;
-    width: 500px  
-}
-.test{
-    flex-direction: column;
-}
-.large{
-    width: 600px;
-    height: 900px;
-    background-color: aqua;
-}
-.modify{
-    width: 600px;
-    height: 900px;
 }
