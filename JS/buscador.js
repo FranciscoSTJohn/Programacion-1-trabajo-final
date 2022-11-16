@@ -3,8 +3,7 @@ let stringToObject = new URLSearchParams(query);
 let aBuscar = stringToObject.get('q'); 
 
 
-let url = `https://api.themoviedb.org/3/search/movie?query=${aBuscar}&api_key=15370bef1a25ea674deaaf70270ad202&language=en-US&page=1&include_adult=false`
-
+let url = `https://api.themoviedb.org/3/search/movie?query=${aBuscar}&api_key=d1e5f3bc2bd3300eb31bc59ece54409b&language=en-US&page=1&include_adult=false`
 console.log(url);
 
 fetch(url)
