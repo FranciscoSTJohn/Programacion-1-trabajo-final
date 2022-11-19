@@ -1,7 +1,25 @@
+//Validaciones
+let buscador= document.querySelector('#buscadores')
+let termino_buscado= document.querySelector('#buscadores');
+let men= document.querySelector('#men');
+
+buscador.addEventListener("submit", function(){
+    if (termino_buscado.value==" "){
+        men.innerHTML="Ingrese una Pelicula o Serie"
+    }
+    else if(termino_buscado.value.length <3){
+        men.innerHTML=" Introduzca por lo menos 3 caracteres"
+    }
+    else{
+        this.submit()
+        men.innerHTML=""
+    }
+})
+
+//Buscador
 let query = location.search;
 let stringToObject = new URLSearchParams(query); 
 let aBuscar = stringToObject.get('q'); 
-let buscador= document.querySelector('q')
 
 
 let url_movies = `https://api.themoviedb.org/3/search/movie?query=${aBuscar}&api_key=d1e5f3bc2bd3300eb31bc59ece54409b&language=en-US&page=1&include_adult=false`
@@ -17,7 +35,7 @@ fetch(url_movies)
     .then(function(data){
         console.log(data);
         let info = data.results
-        let container = document.querySelector('.peliculaspopulares');
+        let container = document.querySelector('.container_busqueda');
         let characters = '';
 
         for(let i=0; i<info.length; i++){
