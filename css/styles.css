@@ -26,16 +26,6 @@ body{
 header{
     text-align: center;
 }
-.container_busqueda{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 95%;
-    height: 100%;
-    margin: 0% 2%;
-    justify-content: space-between;
-}
 .container{
     display: flex;
     flex-wrap: wrap;
@@ -100,9 +90,12 @@ header{
 }
 .peliculaspopulaares{
     height: 300px;
-    width: 100px;
+    width: 70%;
     border-style: ridge; 
     border-color: red; 
+}
+.tamaño_texto{
+    width: 18vw;
 }
 .bodyhome{
     background-color: black;
@@ -192,9 +185,6 @@ header{
     .logo{
         width: 25vw;
         height: 25vw;
-    }
-    .container_busqueda{
-        flex-direction: column;
     }
     .rating{
         margin: 0px 0px 60px 0px;

@@ -1,3 +1,21 @@
+//Validaciones
+let buscador= document.querySelector('#buscadores')
+let termino_buscado= document.querySelector('#buscado');
+
+buscador.addEventListener("submit", function(defalt){
+    defalt.preventDefault();
+    if (termino_buscado.value==""){
+        alert("Ingrese una Pelicula o Serie")
+    }
+    else if(termino_buscado.value.length < 3){
+        alert(" Introduzca por lo menos 3 caracteres")
+    }
+    else{
+        this.submit()
+    }
+})
+
+// peliculas y series
 let peliculas_populares=`https://api.themoviedb.org/3/movie/popular?api_key=d1e5f3bc2bd3300eb31bc59ece54409b&language=en-US&page=1`
 
 fetch(peliculas_populares)
@@ -12,9 +30,10 @@ fetch(peliculas_populares)
 
         for(let i=0; i<info.length; i++){
             characters += `<article class="peliculaspopulares">
-                                <img class="imagen" src=https://image.tmdb.org/t/p/w500/${info[i].poster_path} alt='' />
-                                <p>${info[i].title}</p>
+                                <a href='Detalle_Series.html?id=${info[i].id}'><img class="imagen" src=https://image.tmdb.org/t/p/w500/${info[i].poster_path} alt='' /> </a>
+                                <p class="tamaño_texto">${info[i].title} <a href="Favoritos.html"><i class="fa-regular fa-star"></i> </a> </p>
                                 <p>${info[i].release_date} </p>
+                                <br><br> <br><br>
                             </article>`
         }
         
@@ -41,9 +60,9 @@ fetch(series_populares)
 
         for(let i=0; i<info.length; i++){
             characters += `<article class="peliculaspopulares">
-                                <img class="imagen" src=https://image.tmdb.org/t/p/w500/${info[i].poster_path} alt='' />
-                                <p>${info[i].title}</p>
-                                <p>${info[i].release_date} </p>
+                                <a href='Detalle_Series.html?id=${info[i].id}'><img class="imagen" src=https://image.tmdb.org/t/p/w500/${info[i].poster_path} alt='' /> </a>
+                                <p class="tamaño_texto">${info[i].name} <a href="Favoritos.html"><i class="fa-regular fa-star"></i> </a> </p>
+                                <p>${info[i].first_air_date} </p>
                             </article>`
         }
         
@@ -68,8 +87,8 @@ fetch(lo_mas_visto)
 
         for(let i=0; i<info.length; i++){
             characters += `<article class="peliculaspopulares">
-                                <img class="imagen" src=https://image.tmdb.org/t/p/w500/${info[i].poster_path} alt='' />
-                                <p>${info[i].title}</p>
+                                <a href='Detalle_Series.html?id=${info[i].id}'><img class="imagen" src=https://image.tmdb.org/t/p/w500/${info[i].poster_path} alt='' /> </a>
+                                <p class="tamaño_texto">${info[i].title} <a href="Favoritos.html"><i class="fa-regular fa-star"></i> </a> </p>
                                 <p>${info[i].release_date} </p>
                             </article>`
         }
