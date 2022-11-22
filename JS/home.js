@@ -30,7 +30,7 @@ fetch(peliculas_populares)
 
         for(let i=0; i<info.length; i++){
             characters += `<article class="peliculaspopulares">
-                                <a href='Detalle_Series.html?id=${info[i].id}'><img class="imagen" src=https://image.tmdb.org/t/p/w500/${info[i].poster_path} alt='' /> </a>
+                                <a href='Detalle_peliculas.html?id=${info[i].id}'><img class="imagen" src=https://image.tmdb.org/t/p/w500/${info[i].poster_path} alt='' /> </a>
                                 <p class="tamaño_texto">${info[i].title} <a href="Favoritos.html"><i class="fa-regular fa-star"></i> </a> </p>
                                 <p>${info[i].release_date} </p>
                                 <br><br> <br><br>
@@ -87,7 +87,7 @@ fetch(lo_mas_visto)
 
         for(let i=0; i<info.length; i++){
             characters += `<article class="peliculaspopulares">
-                                <a href='Detalle_Series.html?id=${info[i].id}'><img class="imagen" src=https://image.tmdb.org/t/p/w500/${info[i].poster_path} alt='' /> </a>
+                                <a href='Detalle_peliculas.html?id=${info[i].id}'><img class="imagen" src=https://image.tmdb.org/t/p/w500/${info[i].poster_path} alt='' /> </a>
                                 <p class="tamaño_texto">${info[i].title} <a href="Favoritos.html"><i class="fa-regular fa-star"></i> </a> </p>
                                 <p>${info[i].release_date} </p>
                             </article>`
