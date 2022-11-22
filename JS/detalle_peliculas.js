@@ -36,7 +36,7 @@ fetch(url)
         let container = document.querySelector('#resumen');
 
         container.innerHTML = `<article class="p">
-                                    <p>resu: ${data.overview}</p>
+                                    <p>Resumen: ${data.overview}</p>
                                 </article>
                                 `
         document.querySelector(".Rey").innerHTML= `${data.title}`
