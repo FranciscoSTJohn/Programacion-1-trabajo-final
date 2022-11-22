@@ -33,7 +33,7 @@ fetch(peliculas_populares)
                                 <a href='Detalle_peliculas.html?id=${info[i].id}'><img class="imagen" src=https://image.tmdb.org/t/p/w500/${info[i].poster_path} alt='' /> </a>
                                 <p class="tamaño_texto">${info[i].title} <a href="Favoritos.html"><i class="fa-regular fa-star"></i> </a> </p>
                                 <p>${info[i].release_date} </p>
-                                <br><br> <br><br>
+                                <br><br> <br>
                             </article>`
         }
         
@@ -63,6 +63,7 @@ fetch(series_populares)
                                 <a href='Detalle_Series.html?id=${info[i].id}'><img class="imagen" src=https://image.tmdb.org/t/p/w500/${info[i].poster_path} alt='' /> </a>
                                 <p class="tamaño_texto">${info[i].name} <a href="Favoritos.html"><i class="fa-regular fa-star"></i> </a> </p>
                                 <p>${info[i].first_air_date} </p>
+                                <br><br> <br>
                             </article>`
         }
         
@@ -90,6 +91,7 @@ fetch(lo_mas_visto)
                                 <a href='Detalle_peliculas.html?id=${info[i].id}'><img class="imagen" src=https://image.tmdb.org/t/p/w500/${info[i].poster_path} alt='' /> </a>
                                 <p class="tamaño_texto">${info[i].title} <a href="Favoritos.html"><i class="fa-regular fa-star"></i> </a> </p>
                                 <p>${info[i].release_date} </p>
+                                <br><br> <br>
                             </article>`
         }
         

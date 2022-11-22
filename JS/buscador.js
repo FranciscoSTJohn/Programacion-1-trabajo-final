@@ -36,16 +36,21 @@ fetch(url_movies)
         let info = data.results
         let container = document.querySelector('#Peliculas_buscadas');
         let characters = '';
-
-        for(let i=0; i<info.length; i++){
-            characters += `<article class="peliculaspopulares">
+        if (data.results.length !== 0){
+            for(let i=0; i<info.length; i++){
+                characters += `<article class="peliculaspopulares">
                                     <a href='Detalle_peliculas.html?id=${info[i].id}'><img class="imagen" src=https://image.tmdb.org/t/p/w500/${info[i].poster_path} alt='' /> </a>
                                     <p class="tamaño_texto">${info[i].title} <a href="Favoritos.html"><i class="fa-regular fa-star"></i> </a> </p>
-                                
-                            </article>`
-        }
+                                    <br> <br> <br>
+                                </article>`
         container.innerHTML = characters;
         document.querySelector("#titulo").innerHTML= `Ha Buscado ${aBuscar}`
+        }}
+        else{
+            container.innerHTML = characters;
+            document.querySelector("#titulo").innerHTML= "No se a encontrado el elemento buscado"
+        }
+    
 
         
     })
