@@ -13,14 +13,13 @@ fetch(url)
 
         for(let i=0; i<info.length; i++){
             characters += `<article class="peliculaspopulares">
-                                <p>${info[i].name} </p>
+                                <p><a href= "" >${info[i].name}</a></p>
                                 <br><br> <br><br>
                             </article>`
         }
         
         container.innerHTML = characters;
 
-        
     })
     .catch(function(error){
         console.log(error);
