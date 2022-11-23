@@ -24,7 +24,7 @@ fetch(url)
                 alert("Error, el genero no existe")
             }
 
-        } // que lea 1 por 1 y si el id es = que la ponga
+        } 
         
         container.innerHTML = characters;
     })
