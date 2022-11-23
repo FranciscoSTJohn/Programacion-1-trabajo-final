@@ -45,4 +45,28 @@ fetch(url)
         console.log(error);
     })
 
+    let favoritosPeli = []
+    let recuperoStoragepelis = localStorage.getItem("pelisfavoritas")
     
+    if (recuperoStoragepelis !== null) {
+        favoritosPeli = JSON.parse(recuperoStoragepelis)
+    }
+    
+    let botonfavs = document.querySelector(".botonfav");
+    if(favoritosPeli.includes(id)) {
+        botonfavs.innerText = "sacar_de_favoritos"
+    }
+    botonfavs.addEventListener("click", function() {
+        if(favoritosPeli.includes(id)) {
+            let indicepeli = favoritosPeli.indexOf(id);
+            favoritosPeli.splice(indicepeli, 1)
+            botonfavs.innertext = "agregar_a_favoritos";
+        } else {
+            favoritosPeli.push(id)
+            botonfavs.innertext = "sacar_de_favoritos";
+    
+        }
+        let favs = JSON.stringify(favoritospeli)
+        localStorage.setItem("pelisfavoritas", favs)
+        console.log(localStorage)
+    })
