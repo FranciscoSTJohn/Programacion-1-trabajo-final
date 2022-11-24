@@ -34,9 +34,9 @@ fetch(url)
            let id = info[i].id
            ids.push(id) 
 
-            characters += `<section class="container" id="generos">
-                            <p><a href= "detalle_Generos.html" >${info[i].name}</a></p>
-                            <br><br> <br></section>`
+            characters += `<li class="container_generos" id="generos"><p>  
+                            <a href= "Detalle_Generos.HTML"style="color:#808080; text-decoration: none;" detalle_Generos.html" >${info[i].name}</a></p>
+                            <br><br></li>`
         }
         
         container.innerHTML = characters;
