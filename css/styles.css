@@ -209,3 +209,16 @@ header{
     margin-left: 10px;
     font-size: 25px;
 }
+
+.detalles_generos
+{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.detalles_generos_series
+{
+    display: flex;
+    flex-direction: row;
+}
