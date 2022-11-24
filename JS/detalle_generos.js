@@ -1,3 +1,20 @@
+//Validaciones
+let buscador= document.querySelector('#buscadores')
+let termino_buscado= document.querySelector('#buscado');
+
+buscador.addEventListener("submit", function(defalt){
+    defalt.preventDefault();
+    if (termino_buscado.value==""){
+        alert("Ingrese una Pelicula o Serie")
+    }
+    else if(termino_buscado.value.length < 3){
+        alert(" Introduzca por lo menos 3 caracteres")
+    }
+    else{
+        this.submit()
+    }
+})
+
 //Peliculas
             
 let url1 = `https://api.themoviedb.org/3/discover/movie?api_key=d1e5f3bc2bd3300eb31bc59ece54409b&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate` 
@@ -38,7 +55,7 @@ fetch(url2)
         let container2 = document.querySelector('#detalle_generos_series');
         let texto2 = '';
     
-        for(let i=0; i<info1.length; i++){
+        for(let i=0; i<info2.length; i++){
             console.log(data.results[i])
             texto2 += `<section id="detalle_generos_series"> <a href='Detalle_generos.html?id=${info2[i].id}'><img class="imagen" src=https://image.tmdb.org/t/p/w500/${info2[i].poster_path} alt='' /> </a>
                     <p class="tamaño_texto">${info2[i].title}</p>

@@ -1,3 +1,21 @@
+//Validaciones
+let buscador= document.querySelector('#buscadores')
+let termino_buscado= document.querySelector('#buscado');
+
+buscador.addEventListener("submit", function(defalt){
+    defalt.preventDefault();
+    if (termino_buscado.value==""){
+        alert("Ingrese una Pelicula o Serie")
+    }
+    else if(termino_buscado.value.length < 3){
+        alert(" Introduzca por lo menos 3 caracteres")
+    }
+    else{
+        this.submit()
+    }
+})
+
+
 let recuperoStoragepelis = localStorage.getItem("pelisfavoritas")
 let peliculas = JSON.parse(recuperoStoragepelis)
 console.log(peliculas)
@@ -62,4 +80,4 @@ function buscarymostrarpelis(id) {
             .catch(function(error){
                 console.log(error)
             })
-        }  
+        }

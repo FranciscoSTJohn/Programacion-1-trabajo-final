@@ -130,7 +130,7 @@ header{
 }
 .rating{
     height: 350px;
-    width: 100%;
+    width: 70%;
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-start;
